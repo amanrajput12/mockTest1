@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed style</title>
+<style>
+   
+    .box{
+        width: 200px;
+        height: 200px;
+     border: solid #000 2px;
+     display:  inline-block;
+    margin: 50px;
+    }
+   #box2 {
+    position: relative;
+    top: 40px;
+    left:200px;
+   }
+   #box3{
+    position: absolute;
+    left: 900px;
+   }
+   #box1{
+    position: fixed;
+   }
+   #box4{
+    position: sticky;
+    top: 10px;
+   }
+   #box5{
+    position: static;
+    top:  100px;
+   }
+   .container{
+    height: 1000px;
+    background-color: #808088;
+   }
+   
+</style>
+</head>
+<body>
+    <div class="container">
+<div id="box1" class="box">Box 1</div>
+<div id="box2" class="box">Box 2</div>
+<div  id="box3" class="box"> Box 3</div>
+<div id="box4" class="box"> Box 4</div>
+<div id="box5" class="box"> Box 5</div>
+</div>
+<br>
+
+</body>
+</html>
